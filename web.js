@@ -17,7 +17,7 @@ app.post('/', function (req, res) {
   const right = 'R';
 
   // res.send(moves[Math.floor(Math.random() * moves.length)]);
-  res.send(moves[Math.floor(Math.max(10) * Math.random())]);
+  res.send(moves[Math.floor(Math.max(10) * moves.length + Math.random() * 10)]);
 });
 
 app.listen(process.env.PORT || 8080);
